@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item that displays an story/news -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/sectionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:textColor="@color/textColorSectionName"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="Section" />
+
+        <TextView
+            android:id="@+id/webTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/textColorStoryName"
+            android:textSize="16sp"
+            tools:text="MPs to debate ban on grouse shooting" />
+
+    </LinearLayout>
